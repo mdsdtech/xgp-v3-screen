@@ -131,7 +131,7 @@ void ui_NetworkInfo_screen_init(void)
     lv_obj_set_x(ui_txtActiveConnect, -100);
     lv_obj_set_y(ui_txtActiveConnect, 60);
     lv_obj_set_align(ui_txtActiveConnect, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_txtActiveConnect, "Active Connections: ");
+    lv_label_set_text(ui_txtActiveConnect, "Actve Con: ");
     lv_obj_set_style_text_align(ui_txtActiveConnect, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_txtActiveConnect, &ui_font_MiSans16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -151,7 +151,7 @@ void ui_NetworkInfo_screen_init(void)
     lv_obj_set_x(ui_txtArpCount, 60);
     lv_obj_set_y(ui_txtArpCount, 60);
     lv_obj_set_align(ui_txtArpCount, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_txtArpCount, "Connected Devices: ");
+    lv_label_set_text(ui_txtArpCount, "Devices: ");
     lv_obj_set_style_text_align(ui_txtArpCount, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_txtArpCount, &ui_font_MiSans16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
