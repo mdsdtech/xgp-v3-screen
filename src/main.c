@@ -147,7 +147,7 @@ int read_os_release(char *pretty_name, size_t pretty_name_size,
 
         if (!found_pretty_name)
         {
-            found_pretty_name = extract_env_value(line, "DISTRIB_NAME",
+            found_pretty_name = extract_env_value(line, "DISTRIB_ID",
                                                   pretty_name, pretty_name_size);
         }
 
