@@ -18,8 +18,8 @@
 #include <arpa/inet.h>
 #include <netinet/in.h>
 
-#define UNKNOWN_VALUE_REPLACE_STRING "未知"
-#define UNKNOWN_IP_REPLACE_STRING "无IP地址或接口不存在"
+#define UNKNOWN_VALUE_REPLACE_STRING "Unknown"
+#define UNKNOWN_IP_REPLACE_STRING "IP Not Found"
 #define DEFAULT_VALUE_SIZE 64
 #define MAX_ENV_LINE_LENGTH 128
 
@@ -147,7 +147,7 @@ int read_os_release(char *pretty_name, size_t pretty_name_size,
 
         if (!found_pretty_name)
         {
-            found_pretty_name = extract_env_value(line, "ZZ_DISTRIB_NAME",
+            found_pretty_name = extract_env_value(line, "DISTRIB_NAME",
                                                   pretty_name, pretty_name_size);
         }
 
@@ -159,7 +159,7 @@ int read_os_release(char *pretty_name, size_t pretty_name_size,
 
         if (!found_build_id)
         {
-            found_build_id = extract_env_value(line, "ZZ_DISTRIB_VERSION",
+            found_build_id = extract_env_value(line, "DISTRIB_VERSION",
                                                build_id, build_id_size);
         }
 
@@ -698,7 +698,7 @@ static void update_screen_data(void)
             uptime %= 3600;
             int minutes = uptime / 60;
             int seconds = uptime % 60;
-            snprintf(buf_uptime, DEFAULT_VALUE_SIZE, "%d 天 %d 小时 %d 分 %d 秒",
+            snprintf(buf_uptime, DEFAULT_VALUE_SIZE, "%d D %d H %d M %d S",
                      days, hours, minutes, seconds);
             lv_label_set_text(ui_valUptime, buf_uptime);
         }
