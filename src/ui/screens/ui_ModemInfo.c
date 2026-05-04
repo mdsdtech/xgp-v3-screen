@@ -99,7 +99,7 @@ void ui_ModemInfo_screen_init(void)
     lv_obj_set_x(ui_txtModemTempature, -120);
     lv_obj_set_y(ui_txtModemTempature, 0);
     lv_obj_set_align(ui_txtModemTempature, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_txtModemTempature, "Temperature: ");
+    lv_label_set_text(ui_txtModemTempature, "Temp: ");
     lv_obj_set_style_text_align(ui_txtModemTempature, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_txtModemTempature, &ui_font_MiSans16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -119,7 +119,7 @@ void ui_ModemInfo_screen_init(void)
     lv_obj_set_x(ui_txtModemVoltage, 25);
     lv_obj_set_y(ui_txtModemVoltage, 0);
     lv_obj_set_align(ui_txtModemVoltage, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_txtModemVoltage, "Voltage: ");
+    lv_label_set_text(ui_txtModemVoltage, "Volt: ");
     lv_obj_set_style_text_align(ui_txtModemVoltage, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_txtModemVoltage, &ui_font_MiSans16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -159,7 +159,7 @@ void ui_ModemInfo_screen_init(void)
     lv_obj_set_x(ui_txtModemNetworkType, 25);
     lv_obj_set_y(ui_txtModemNetworkType, 30);
     lv_obj_set_align(ui_txtModemNetworkType, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_txtModemNetworkType, "Network Type: ");
+    lv_label_set_text(ui_txtModemNetworkType, "Type: ");
     lv_obj_set_style_text_align(ui_txtModemNetworkType, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_txtModemNetworkType, &ui_font_MiSans16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -199,7 +199,7 @@ void ui_ModemInfo_screen_init(void)
     lv_obj_set_x(ui_txtModemAmbr, 25);
     lv_obj_set_y(ui_txtModemAmbr, 60);
     lv_obj_set_align(ui_txtModemAmbr, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_txtModemAmbr, "Max Rate: ");
+    lv_label_set_text(ui_txtModemAmbr, "Rate: ");
     lv_obj_set_style_text_align(ui_txtModemAmbr, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_txtModemAmbr, &ui_font_MiSans16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
