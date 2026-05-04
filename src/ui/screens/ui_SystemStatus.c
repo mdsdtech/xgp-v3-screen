@@ -72,7 +72,7 @@ void ui_SystemStatus_screen_init(void)
     lv_obj_set_x(ui_txtLoadAvg, -100);
     lv_obj_set_y(ui_txtLoadAvg, -30);
     lv_obj_set_align(ui_txtLoadAvg, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_txtLoadAvg, "Avarage Load: ");
+    lv_label_set_text(ui_txtLoadAvg, "Avg Load: ");
     lv_obj_set_style_text_align(ui_txtLoadAvg, LV_TEXT_ALIGN_RIGHT, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_txtLoadAvg, &ui_font_MiSans16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
