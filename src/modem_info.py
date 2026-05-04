@@ -62,6 +62,23 @@ def get_modem_info():
             result["ISP"] = "中国广电"
         elif result["ISP"] in ["46020"]:
             result["ISP"] = "中国铁通"
+        # --- Malaysia (MCC: 502) ---
+        elif result["ISP"] in ["50212", "50217"]:
+            result["ISP"] = "Maxis"
+        elif result["ISP"] in ["50213", "50219"]:
+            result["ISP"] = "Celcom"
+        elif result["ISP"] in ["50216"]:
+            result["ISP"] = "Digi"
+        elif result["ISP"] in ["50218"]:
+            result["ISP"] = "U Mobile"
+        elif result["ISP"] in ["50201", "50211", "50214"]:
+            result["ISP"] = "Telekom Malaysia"
+        elif result["ISP"] in ["502150"]:
+            result["ISP"] = "Tune Talk"
+        elif result["ISP"] in ["502152"]:
+            result["ISP"] = "Yes"
+        elif result["ISP"] in ["502153"]:
+            result["ISP"] = "UniFi"
         
     if result.get('CQI DL', '') == "":
         result['CQI DL'] = "-"
