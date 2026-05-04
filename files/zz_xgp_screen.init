@@ -14,7 +14,7 @@ start_service() {
     fi
     procd_open_instance
 
-    if ! grep -q "ImmortalWrt" /etc/openwrt_release 2>/dev/null; then
+    if ! grep -q "GFriendWRT" /etc/openwrt_release 2>/dev/null; then
         if [ -c /dev/fb1 ]; then
             procd_set_param env LV_LINUX_FBDEV_DEVICE=/dev/fb1
         fi
