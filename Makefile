@@ -13,7 +13,7 @@ define Package/xgp-v3-screen
 	CATEGORY:=Utilities
 	TITLE:=NLnet XiGuaPi V3 TFT Screen
 	DEPENDS:=+python3 +libpthread +libstdcpp +kmod-fb-tft-gc9307
-	URL:=https://github.com/zzzz0317/xgp-v3-screen
+	URL:=https://github.com/mdsdtech/xgp-v3-screen
 endef
 
 define Package/xgp-v3-screen/description
